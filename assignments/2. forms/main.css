@@ -1,0 +1,25 @@
+ .not-empty{
+    display: block;
+    margin: 15px 0;
+    padding: 10px 10px;
+
+    /* border: none; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 2px 2px 2px 1px grey;
+    /* border-bottom: 1px solid red; */
+ } 
+ label{
+     color: rgb(38, 86, 190);
+     /* margin-top: 40px; */
+     
+ }
+ .btn{
+     margin: 10px 0;
+     padding: 8px 12px;
+     color: red;
+     /* background: rgb(39, 41, 40); */
+     border-radius: 4px;
+     cursor: pointer;
+ }
