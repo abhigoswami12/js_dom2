@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="./style.css"></script>
-    <title>Todo</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="./main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>todoList</title>
+</head>
+
+<body>
+  <h1>Todos</h1>
+  <main class="container">
+    <div class="drop-down-flex">
+      <i class="fas fa-chevron-down drop-down-menu"></i></a>
+      <input type="text" placeholder="write something" class="text-input">
+    </div>
+    <ul>
+
+    </ul>
+    <footer>
+      <span class="item">1 item left</span>
+      <button class="All">All</button>
+      <button class="Completed">Completed</button>
+      <button class="Active">Active</button>
+      <button class="Clear"><a class="anchor" href="#">Clear Completed</a></button>
+    </footer>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a134e01e87.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>

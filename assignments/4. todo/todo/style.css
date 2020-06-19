@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.drop-down-flex{
+    display:flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+body{
+    text-align: center;
+    /* margin: 0 auto; */
+    background: rgb(219, 217, 217)
+}
+li{
+    /* max-width: 600px; */
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center; 
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding: 20px 0;
+    font-size: 24px;
+    /* overflow: auto; */
+}
+li:hover span{
+    color:red;
+}
+ul {
+    list-style-type: circle;
+}
+
+.container{
+    max-width: 600px;
+    /* border: 1px solid red; */
+    margin: 60px auto;
+    /* padding-bottom: 120px; */
+    box-shadow: 3px 3px 4px 6px rgb(212, 207, 207);
+    background: #fff;
+    
+
+}
+.drop-down-flex {
+    border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+.drop-down-menu:hover {
+    transform: scale(1.2);
+}
+.text-input{
+    width: 100%;
+    border: none;
+    /* border-bottom: 1px solid rgb(218, 213, 213); */
+    padding: 20px 0;
+    font-size: 20px;
+    padding-left: 20px;
+    /* font-size: 32px;
+    color: rgb(255, 253, 253) */
+}
+h1{
+    margin-top: 40px;
+    font-size: 64px;
+    text-transform: capitalize;
+    color: rgb(163, 127, 126);
+}
+.span {
+    text-align: right;
+    color: rgb(247, 241, 241);
+    cursor: pointer;
+    padding-right: 70px;
+}
+/* .span:hover{
+    color:red;
+} */
+footer{
+    padding: 30px 0;
+    
+}
+/* .All{
+    border: 1px solid rgb(138, 103, 103);
+
+}
+.All:hover{
+    border: 1px solid rgb(145, 32, 32);
+} */
+button{
+    cursor: pointer;
+    background: transparent;
+    border-radius: 4px;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(92, 90, 87);
+}
+.All:hover{
+    border: 1px solid rgb(138, 103, 103);
+    color:rgb(145, 64, 64);
+    
+}
+.Completed:hover{
+    border: 1px solid rgb(138, 103, 103);
+    color:rgb(145, 64, 64);
+    
+}
+.Active:hover{
+    border: 1px solid rgb(138, 103, 103);
+    color:rgb(145, 64, 64);
+    
+}
+.Clear a{
+    color: rgb(92, 90, 87);
+    
+}
+.Clear a:hover{
+    /* border: none; */
+    color:rgb(145, 64, 64);
+}
+div{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.input-checkbox{
+    
+    display:inline-block;
+    cursor: pointer;
+}
+p{
+    display: inline-block;
+    font-size: 32px;
+    color:rgb(145, 64, 64);
+    /* width:250px; */
+    word-break: break-word;
+    text-align: left;
+    padding-left: 20px;
+}
+.item{
+    color:  rgb(92, 90, 87);
+}
+.item:hover{
+    color: rgb(145, 32, 32);
+    cursor: default;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgb(156, 123, 123);
+}
+.para-input {
+    width: 90%;
+    padding: 15px;
+}
+
+/* .para-input {
+    display: block;
+} */

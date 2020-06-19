@@ -5,6 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Forms</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form">
+      <label for="" class="label_name">
+        Name
+        <input
+          type="text"
+          placeholder="Full Name"
+          class="not-empty"
+          id="name"
+        />
+      </label>
+      <p class="newLine1"></p>
+      <label for="" class="label_email">
+        Email address
+        <input
+          type="email"
+          placeholder="example@domain.com"
+          class="not-empty"
+          id="email"
+        />
+      </label>
+      <p class="newLine2"></p>
+      <label for="" class="label_password">
+        Password
+        <input
+          type="text"
+          placeholder="Password"
+          class="not-empty"
+          id="password"
+        />
+      </label>
+      <p class="newLine3"></p>
+      <button class="btn">Sign Up</button>
+    </div>
+
+    <script>
+      var btn = document.querySelector(".btn");
+      function signupfn(event) {
+        console.dir(event);
+        var form = document.querySelector(".form");
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+        var newLine1 = document.querySelector(".newLine1");
+        var newLine2 = document.querySelector(".newLine2");
+        var newLine3 = document.querySelector(".newLine3");
+        if (name.value.trim() === "") {
+          newLine1.innerText = "name cannot be empty";
+        } else {
+          newLine1.innerText = "";
+        }
+        if (email.value.trim() === "") {
+          newLine2.innerText = "email cannot be empty";
+        } else {
+          newLine2.innerText = "";
+        }
+        if (password.value.trim() === "") {
+          newLine3.innerText = "password cannot be empty";
+        } else {
+          newLine3.innerText = "";
+        }
+        if (name.value !== "" && email.value !== "" && password.value !== "") {
+          form.innerHTML =
+            "You are " +
+            name.value +
+            ". Your email: " +
+            email.value +
+            " and your password is " +
+            password.value;
+        }
+      }
+      btn.addEventListener("click", signupfn);
+    </script>
+  </body>
 </html>
